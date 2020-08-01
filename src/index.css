@@ -10,14 +10,13 @@
   --gray: #474B4C;
   --grayDark: #2f373d;
   --grayLight: #FFFAFA;
-  --grayMedium: #ECEFF0; 
+  --grayMedium: #ECEFF0;
   --white: #FFFFFF;
   --primary: var(--blue);
   --secondary: var(--gray);
 }
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   background-color: var(--grayLight);
@@ -26,10 +25,10 @@ body {
 
 a {
   color: inherit;
-} 
+}
 
 #root {
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--bodyPaddingTop));
 }
